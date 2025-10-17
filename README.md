@@ -1,2 +1,2 @@
-# det
-Dijital Özgürlük ve Etik Teknoloji
+# Xmer™ DET
+Digital Freedom and Ethical Technology | Dijital Özgürlük ve Etik Teknoloji
