@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "http://xmeroriginals.github.io/det/resources/projects-thumbs/TinDay-Thumb.png",
+    "title_en": "TinDay | Social Platform",
+    "desc_en": "Match with people born on the same day. Chat, celebrate, connect, call, or talk without creating an account.",
+    "title_tr": "TinDay | Sosyal Platform",
+    "desc_tr": "Aynı gün doğan kişilerle eşleşin. Hesap oluşturmadan sohbet edin, kutlayın, bağlantı kurun, arayın veya konuşun.",
+    "link": "https://tinday.xmeroriginals.com"
+  },
+  {
+    "id": 2,
+    "image": "http://xmeroriginals.github.io/det/resources/projects-thumbs/Lunetune-Thumb.png",
+    "title_en": "Lunetune | Music Player",
+    "desc_en": "Are you ready to use our unique and feature-rich music player without creating an account?",
+    "title_tr": "Lunetune | Müzik Çalar",
+    "desc_tr": "Hesap oluşturmadan benzersiz ve özelliklerle dolu müzik çalarımızı kullanmaya hazır mısınız?",
+    "link": "https://lunetune.xmeroriginals.com"
+  }
+]
