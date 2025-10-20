@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "You can donate or tell us if you have an idea for a Freedom-bringing and Ethical app.",
       donateUs: "Donate Us",
       contactIdea: "I have an Idea",
-      metaTitle: "Xmer™ | Digital Freedom and Ethical Technology",
+      metaTitle: "XmerOriginals | Digital Freedom and Ethical Technology",
       metaDescription:
         "Open-source projects and tools that promote digital freedom, privacy and ethical technology. Join, donate or contribute to build a privacy-respecting internet.",
       contactMailWarn:
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Bağışta bulunabilir veya Özgürlük getiren ve Etik bir uygulama fikriniz varsa bize iletebilirsiniz.",
       donateUs: "Bize Bağış Yapın",
       contactIdea: "Bir Fikrim Var",
-      metaTitle: "Xmer™ | Dijital Özgürlük ve Etik Teknoloji",
+      metaTitle: "XmerOriginals | Dijital Özgürlük ve Etik Teknoloji",
       metaDescription:
         "Dijital özgürlüğü, gizliliği ve etik teknolojiyi destekleyen açık kaynaklı projeler ve araçlar. Katılın, bağış yapın veya katkıda bulunun.",
       contactMailWarn:
