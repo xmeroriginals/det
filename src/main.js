@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const translations = {
     en: {
       navLicense: "License",
+      navHome: "Home",
       navAbout: "About Us",
       navProjects: "Projects",
       navContact: "Contact & Donate",
@@ -78,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     tr: {
       navLicense: "Lisans",
+      navHome: "Ana Sayfa",
       navAbout: "Hakkımızda",
       navProjects: "Projeler",
       navContact: "İletişim & Bağış",
