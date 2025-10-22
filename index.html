@@ -62,27 +62,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://xmeroriginals.com/#organization",
+      "name": "XmerOriginals",
+      "url": "https://xmeroriginals.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://xmeroriginals.com/resources/XmerOriginals%20Logo%20-%20Klasik%20T2.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.instagram.com/xmerdet"
+      ],
+      "contactPoint": [
         {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              "name": "XmerOriginals",
-              "url": "https://xmeroriginals.com/",
-              "logo": "https://xmeroriginals.com/resources/XmerOriginals%20Logo%20-%20Klasik%20T2.png",
-              "sameAs": [
-                "https://www.instagram.com/xmerdet"
-              ]
-            },
-            {
-              "@type": "WebSite",
-              "url": "https://xmeroriginals.com/",
-              "name": "XmerOriginals | Digital Freedom and Ethical Technology",
-              "description": "Digital Freedom and Ethical Technology Community"
-            }
-          ]
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@xmeroriginals.com",
+          "url": "https://xmeroriginals.com/#contact"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "press",
+          "email": "press@xmeroriginals.com",
+          "url": "https://xmeroriginals.com/#contact"
         }
-    </script>
+      ],
+      "description": "XmerOriginals develops open-source projects and tools that promote digital freedom, privacy, and ethical technology. We are a community-driven organization relying on donations and volunteer support."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://xmeroriginals.com/#website",
+      "url": "https://xmeroriginals.com/",
+      "name": "XmerOriginals",
+      "description": "Open-source projects and tools that promote digital freedom, privacy and ethical technology. Join, donate or contribute to build a privacy-respecting internet.",
+      "publisher": {
+        "@id": "https://xmeroriginals.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://xmeroriginals.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://xmeroriginals.com/#webpage",
+      "url": "https://xmeroriginals.com/",
+      "name": "XmerOriginals | Digital Freedom and Ethical Technology",
+      "isPartOf": {
+        "@id": "https://xmeroriginals.com/#website"
+      },
+      "about": {
+        "@id": "https://xmeroriginals.com/#organization"
+      },
+      "description": "Open-source projects and tools that promote digital freedom, privacy and ethical technology. Join, donate or contribute to build a privacy-respecting internet.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://xmeroriginals.com/"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -144,7 +201,7 @@
         <header
             class="sticky top-0 z-50 whitespace-nowrap border-b border-gray-200/80 dark:border-gray-700/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
             <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-20">
-                <a href="#home" class="flex items-center gap-3" aria-label="Go to home">
+                <a class="flex items-center gap-3">
                     <img alt="Xmer™"
                         src="https://xmeroriginals.com/resources/XmerOriginals%20Logo%20-%20Klasik%20T2.png"
                         class="block w-12 h-auto" />
@@ -152,7 +209,7 @@
 
                 <nav class="hidden md:flex flex-1 justify-center items-center gap-8">
                     <a class="text-sm font-medium hover:text-primary dark:hover:text-primary-dark transition-colors"
-                        href="#home" data-translate-key="navHome">Home</a>
+                        href="https://xmeroriginals.com/det-license" data-translate-key="navLicense">License</a>
                     <a class="text-sm font-medium hover:text-primary dark:hover:text-primary-dark transition-colors"
                         href="#about" data-translate-key="navAbout">About Us</a>
                     <a class="text-sm font-medium hover:text-primary dark:hover:text-primary-dark transition-colors"
@@ -184,7 +241,7 @@
                 aria-label="Mobile navigation">
                 <nav class="flex flex-col items-center gap-4 p-6" aria-label="Main navigation">
                     <a class="text-lg font-medium hover:text-primary dark:hover:text-primary-dark transition-colors"
-                        href="#home" data-translate-key="navHome">Home</a>
+                        href="https://xmeroriginals.com/det-license" data-translate-key="navLicense">License</a>
                     <a class="text-lg font-medium hover:text-primary dark:hover:text-primary-dark transition-colors"
                         href="#about" data-translate-key="navAbout">About Us</a>
                     <a class="text-lg font-medium hover:text-primary dark:hover:text-primary-dark transition-colors"
@@ -197,7 +254,7 @@
         <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 
             <main class="flex-1">
-                <section id="home" class="relative pt-24 pb-24 sm:pt-32 sm:pb-32">
+                <section id="home" class="relative pt-12 pb-12 sm:pt-16 sm:pb-24">
                     <div class="absolute inset-0">
                         <div class="h-full w-full bg-cover bg-center"
                             style='background-image: linear-gradient(rgba(47, 62, 77, 0.8) 0%, rgba(29, 43, 57, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5Vu5Q68HAFgZxdCQRspCpV9Y0MQtVdCPyKtEbT40v8jJee_A-3ViczUqNaQMLWXixRia8AtdiuoQU6dimrmj5xPXV6U09y-lK600kIuRdNmIynnO8NJonsgZRylO88Vc2cP4eQ7hXhRCRFaKxwhC8UEU-ul0HhOSNFEg7OmeN2flZbFwzA13H5dq_wRIGJMmG7slFXEn0ajD3uxMNUzYcprzMgZZ2GFa4gTByyafbmX2BJI9p4zyWn1wMEEI-wTn5S0PpotKg2ApG");'>
