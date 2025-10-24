@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.opacity = "0";
     loader.style.visibility = "hidden";
-  }, 333);
+  }, 200);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "We're here to help. Reach out to us via email or connect with us on social media.",
       contactEmailTitle: "Email Us",
       contactEmailDesc: "Our team is ready to answer your questions.",
+      contactMainTitle: "Contact",
       contactInquiries: "General Inquiries",
       contactPress: "Press & Media",
       contactFollowTitle: "Follow Us",
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "You can donate or tell us if you have an idea for a Freedom-bringing and Ethical app.",
       donateUs: "Donate Us",
       contactIdea: "I have an Idea",
+      contactReport: "Report bug or any issue",
       metaTitle: "XmerOriginals | Digital Freedom and Ethical Technology",
       metaDescription:
         "Open-source projects and tools that promote digital freedom, privacy and ethical technology. Join, donate or contribute to build a privacy-respecting internet.",
@@ -111,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Yardım etmek için buradayız. Bize e-posta yoluyla ulaşın veya sosyal medyada bizimle bağlantı kurun.",
       contactEmailTitle: "E-posta Gönderin",
       contactEmailDesc: "Ekibimiz sorularınızı yanıtlamaya hazır.",
+      contactMainTitle: "İletişim",
       contactInquiries: "Genel Sorular",
       contactPress: "Basın & Medya",
       contactFollowTitle: "Bizi Takip Edin",
@@ -122,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Bağışta bulunabilir veya Özgürlük getiren ve Etik bir uygulama fikriniz varsa bize iletebilirsiniz.",
       donateUs: "Bize Bağış Yapın",
       contactIdea: "Bir Fikrim Var",
+      contactReport: "Hata veya herhangi bir sorunu bildirin",
       metaTitle: "XmerOriginals | Dijital Özgürlük ve Etik Teknoloji",
       metaDescription:
         "Dijital özgürlüğü, gizliliği ve etik teknolojiyi destekleyen açık kaynaklı projeler ve araçlar. Katılın, bağış yapın veya katkıda bulunun.",
