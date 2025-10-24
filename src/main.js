@@ -309,12 +309,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const copyButton = document.getElementById("copyButton");
     const downloadButton = document.getElementById("downloadButton");
 
-    const detCLicenseTemplate = `DET-C License v1.0\n(C) [YEAR] [AUTHOR]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\n1. **Attribution** – The above copyright notice and this permission notice\n   shall be included in all copies or substantial portions of the Software.\n\n2. **Ethical Use** – This Software **may not be used**, directly or indirectly,\n   for any purpose that violates fundamental human rights, promotes violence,\n   causes harm, facilitates surveillance, discrimination, environmental damage,\n   or contributes to unethical, illegal, or deceptive activities — whether\n   explicit or concealed.\n\n3. **Transparency** – Users of this Software are encouraged to disclose when\n   it is used within AI systems, automation, or decision-making processes\n   that affect humans.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.`;
-    const detPLicenseTemplate = `DET-P License v1.0\n(C) [YEAR] [AUTHOR]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to use,\ncopy, modify, and distribute the Software **for personal, educational, or\nnon-commercial purposes only**, subject to the following conditions:\n\n1. **No Commercial Use** – The Software or any derivative work may not be\n   sold, licensed, rented, or otherwise used for commercial advantage or\n   monetary gain without explicit written permission from the copyright holder.\n\n2. **Attribution** – The above copyright notice and this permission notice\n   shall be included in all copies or substantial portions of the Software.\n\n3. **Ethical Use** – This Software **may not be used**, directly or indirectly,\n   for any purpose that violates fundamental human rights, promotes violence,\n   causes harm, facilitates surveillance, discrimination, environmental damage,\n   or contributes to unethical, illegal, or deceptive activities — whether\n   explicit or concealed.\n\n4. **Transparency** – Users of this Software are encouraged to disclose when\n   it is used within AI systems, automation, or decision-making processes\n   that affect humans.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.`;
+    const detCLicenseTemplate = `DET-C License v1.0\nCopyright (c) [YEAR] [COPYRIGHT HOLDERS]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\n1. **Attribution** – The above copyright notice and this permission notice\n   shall be included in all copies or substantial portions of the Software.\n\n2. **Ethical Use** – This Software **may not be used**, directly or indirectly,\n   for any purpose that violates fundamental human rights, promotes violence,\n   causes harm, facilitates surveillance, discrimination, environmental damage,\n   or contributes to unethical, illegal, or deceptive activities — whether\n   explicit or concealed.\n\n3. **Transparency** – Users of this Software are encouraged to disclose when\n   it is used within AI systems, automation, or decision-making processes\n   that affect humans.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.`;
+    const detPLicenseTemplate = `DET-P License v1.0\nCopyright (c) [YEAR] [COPYRIGHT HOLDERS]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to use,\ncopy, modify, and distribute the Software **for personal, educational, or\nnon-commercial purposes only**, subject to the following conditions:\n\n1. **No Commercial Use** – The Software or any derivative work may not be\n   sold, licensed, rented, or otherwise used for commercial advantage or\n   monetary gain without explicit written permission from the copyright holder.\n\n2. **Attribution** – The above copyright notice and this permission notice\n   shall be included in all copies or substantial portions of the Software.\n\n3. **Ethical Use** – This Software **may not be used**, directly or indirectly,\n   for any purpose that violates fundamental human rights, promotes violence,\n   causes harm, facilitates surveillance, discrimination, environmental damage,\n   or contributes to unethical, illegal, or deceptive activities — whether\n   explicit or concealed.\n\n4. **Transparency** – Users of this Software are encouraged to disclose when\n   it is used within AI systems, automation, or decision-making processes\n   that affect humans.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.`;
 
     generateButton.addEventListener("click", () => {
-      const authorName =
-        authorNameInput.value.trim() || "[Copyright Owner Name]";
+      const authorName = authorNameInput.value.trim() || "[COPYRIGHT HOLDERS]";
       const isCommercialAllowed = allowCommercialCheckbox.checked;
       const currentYear = new Date().getFullYear();
       const template = isCommercialAllowed
@@ -322,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : detPLicenseTemplate;
       const finalLicense = template
         .replace("[YEAR]", currentYear)
-        .replace("[AUTHOR]", authorName);
+        .replace("[COPYRIGHT HOLDERS]", authorName);
       licenseTextarea.value = finalLicense;
       resultContainer.classList.remove("hidden");
     });
@@ -335,7 +334,7 @@ document.addEventListener("DOMContentLoaded", () => {
           copyButton.innerText = htmlEl.lang === "tr" ? "Kopyalandı" : "Copied";
           setTimeout(() => {
             copyButton.innerText = originalText;
-          }, 500);
+          }, 1000);
         })
         .catch((err) => {
           console.error("Failed to copy: ", err);
@@ -350,11 +349,11 @@ document.addEventListener("DOMContentLoaded", () => {
     downloadButton.addEventListener("click", () => {
       const licenseContent = licenseTextarea.value;
       if (!licenseContent) return;
-      const blob = new Blob([licenseContent], { type: "text/plain" });
+      const blob = new Blob([licenseContent], { type: "text/markdown" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "LICENSE";
+      a.download = "LICENSE.md";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
