@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heroSubtitle:
         "We believe in a more freely accessible future where technology empowers individuals and respects their rights. Not for money, but for a more reliable internet.",
       heroButton: "Learn More",
+      heroGuideButton: "DET Guide",
       aboutTitle: "About Us",
       aboutText:
         "At Xmer™ DET, we are committed to developing innovative solutions that promote digital freedom and uphold ethical standards in technology. Our vision and mission are to create a new world where personal data belongs to its rightful owners.",
@@ -78,6 +79,21 @@ document.addEventListener("DOMContentLoaded", () => {
       licenseResultTitle: "Your License",
       licenseCopyBtn: "Copy to Clipboard",
       licenseDownloadBtn: "Download as LICENSE file",
+      GuideTitle: "DET Guide",
+      GuideSubtitle: "A short guide on how to use technology more consciously.",
+      GuideHeroTitle:
+        "This guide aims to provide a digestible and intermediate understanding of Digital Freedom and Ethical Technology for general users, focusing on practical steps without delving into excessive details.",
+      GuideHeroDesc:
+        "You can choose the PDF that suits your theme, if you are using Dark mode, you can choose DET Dark Theme Guide PDF, if you want Light, you can choose DET Light Theme Guide PDF.",
+      guideLightBtn: "DET Light Theme Guide PDF",
+      guideDarkBtn: "DET Dark Theme Guide PDF",
+      GuideContentsTitle: "What's in This Guide?",
+      GuideContents: `1. Introduction: Why Digital Security?
+      2. The Gates of Your Digital Castle: The Art of Managing App Permissions
+      3. The Window to Your Digital World: Browser Privacy
+      4. Breaking the Default Chains: Embracing Ethical Alternatives
+      5. Conclusion: Perfect Privacy is a Myth, But a Better Future is Possible
+      `,
     },
     tr: {
       navLicense: "Lisans",
@@ -89,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heroSubtitle:
         "Teknolojinin bireyleri güçlendirdiği ve haklarına saygı duyduğu, daha özgürce erişilebilir bir geleceğe inanıyoruz. Para için değil, daha güvenilir bir internet için.",
       heroButton: "Daha Fazla Bilgi",
+      heroGuideButton: "DET Rehberi",
       aboutTitle: "Hakkımızda",
       aboutText:
         "Xmer™ DET olarak, dijital özgürlüğü teşvik eden ve teknolojide etik standartları koruyan yenilikçi çözümler geliştirmeye kararlıyız. Hayalimiz ve amacımız birlikte kişisel verilerin sahiplerine ait olduğu yeni bir dünya kurmak.",
@@ -143,6 +160,22 @@ document.addEventListener("DOMContentLoaded", () => {
       licenseResultTitle: "Lisansınız",
       licenseCopyBtn: "Panoya Kopyala",
       licenseDownloadBtn: "LICENSE olarak İndir",
+      GuideTitle: "DET Rehberi",
+      GuideSubtitle:
+        "Teknolojiyi daha bilinçli kullanmak için kısa bir rehber.",
+      GuideHeroTitle:
+        "Bu rehber, genel kullanıcılar için Dijital Özgürlük ve Etik Teknoloji hakkında aşırı detaylara girmeden, pratik adımlara odaklanarak kolayca sindirilebilir ve orta düzeyde bir anlayış sağlamayı amaçlamaktadır.",
+      GuideHeroDesc:
+        "Tema tercihinize göre PDF seçebilirsiniz, Karanlık modu kullanıyorsanız DET Koyu Tema Rehber PDF'i, Açık modu tercih ediyorsanız DET Açık Tema Rehber PDF'i seçebilirsiniz.",
+      guideLightBtn: "DET Açık Tema Rehber PDF",
+      guideDarkBtn: "DET Koyu Tema Rehber PDF",
+      detGuideContentsTitle: "Bu Rehberde Neler Var?",
+      GuideContents: `1. Giriş: Dijital Güvenlik Neden Önemli?
+      2. Dijital Kaleni Korumak: Uygulama İzinlerini Yönetme Sanatı
+      3. Dijital Dünyana Açılan Pencere: Tarayıcı Gizliliği
+      4. Varsayılan Zincirleri Kırmak: Etik Alternatifleri Benimsemek
+      5. Sonuç: Mükemmel Gizlilik Bir Efsane, Ama Daha İyi Bir Gelecek Mümkün
+      `,
     },
   };
 
@@ -279,7 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             : project.title_en
                         }
                     </h3>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm mt-2 flex-grow" data-translate-key="project${
+                    <p class="text-gray-600 dark:text-gray-400 text-sm flex-grow" data-translate-key="project${
                       project.id
                     }Desc">
                         ${
@@ -361,6 +394,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  const initializeDETMidGuide = () => {
+    const generatorSection = document.getElementById("GuideDET");
+    if (!generatorSection) return;
+    const ThemeLightGuide = document.getElementById("themeLightGuide");
+    const ThemeDarkGuide = document.getElementById("themeDarkGuide");
+
+    ThemeLightGuide.addEventListener("click", () => {
+      window.open(
+        "https://xmeroriginals.com/mid-guide/DET-Light.pdf",
+        "_blank"
+      );
+    });
+
+    ThemeDarkGuide.addEventListener("click", () => {
+      window.open("https://xmeroriginals.com/mid-guide/DET-Dark.pdf", "_blank");
+    });
+  };
+
   const initializePage = async () => {
     const savedLang = localStorage.getItem("language");
     const browserLang = navigator.language || navigator.userLanguage;
@@ -371,7 +422,13 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const response = await fetch("./projects/projects.json");
         if (!response.ok) throw new Error("Network response was not ok");
-        const projects = await response.json();
+        let projects = await response.json();
+
+        for (let i = projects.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [projects[i], projects[j]] = [projects[j], projects[i]];
+        }
+
         cachedProjects = projects;
         loadProjects(projects, currentLang);
       } catch (error) {
@@ -386,6 +443,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setLanguage(currentLang);
     initializeAnimations();
     initializeLicenseGenerator();
+    initializeDETMidGuide();
   };
 
   langTR.addEventListener("click", () => {
