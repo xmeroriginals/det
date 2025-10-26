@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "http://xmeroriginals.github.io/det/resources/projects-thumbs/TinDay-Thumb.png",
+    "image": "https://xmeroriginals.github.io/det/resources/projects-thumbs/TinDay-Thumb.png",
     "title_en": "TinDay | Social Platform",
     "desc_en": "Match with people born on the same day. Chat, celebrate, connect, call, or talk without creating an account.",
     "title_tr": "TinDay | Sosyal Platform",
@@ -10,11 +10,20 @@
   },
   {
     "id": 2,
-    "image": "http://xmeroriginals.github.io/det/resources/projects-thumbs/Lunetune-Thumb.png",
+    "image": "https://xmeroriginals.github.io/det/resources/projects-thumbs/Lunetune-Thumb.png",
     "title_en": "Lunetune | Music Player",
     "desc_en": "Are you ready to use our unique and feature-rich music player without creating an account?",
     "title_tr": "Lunetune | Müzik Çalar",
     "desc_tr": "Hesap oluşturmadan benzersiz ve özelliklerle dolu müzik çalarımızı kullanmaya hazır mısınız?",
     "link": "https://lunetune.xmeroriginals.com"
+  },
+  {
+    "id": 3,
+    "image": "https://xmeroriginals.github.io/det/resources/projects-thumbs/DET-MidLevelGuide.png",
+    "title_en": "DET Mid-Level Guide",
+    "desc_en": "A short guide on how to use technology more consciously.",
+    "title_tr": "DET Orta Seviye Rehber",
+    "desc_tr": "Teknolojiyi daha bilinçli kullanma hakkında kısa bir rehber.",
+    "link": "https://xmeroriginals.com/det-mid-guide"
   }
 ]
