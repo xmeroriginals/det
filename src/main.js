@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Tema tercihinize göre PDF seçebilirsiniz, Karanlık modu kullanıyorsanız DET Koyu Tema Rehber PDF'i, Açık modu tercih ediyorsanız DET Açık Tema Rehber PDF'i seçebilirsiniz.",
       guideLightBtn: "DET Açık Tema Rehber PDF",
       guideDarkBtn: "DET Koyu Tema Rehber PDF",
-      detGuideContentsTitle: "Bu Rehberde Neler Var?",
+      GuideContentsTitle: "Bu Rehberde Neler Var?",
       GuideContents: `1. Giriş: Dijital Güvenlik Neden Önemli?
       2. Dijital Kaleni Korumak: Uygulama İzinlerini Yönetme Sanatı
       3. Dijital Dünyana Açılan Pencere: Tarayıcı Gizliliği
