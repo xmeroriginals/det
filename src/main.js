@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
       heroSubtitle:
         "We believe in a more freely accessible future where technology empowers individuals and respects their rights. Not for money, but for a more reliable internet.",
       heroButton: "Learn More",
-      heroGuideButton: "DET Guide",
       aboutTitle: "About Us",
       aboutText:
         "At Xmer™ DET, we are committed to developing innovative solutions that promote digital freedom and uphold ethical standards in technology. Our vision and mission are to create a new world where personal data belongs to its rightful owners.",
@@ -105,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
       heroSubtitle:
         "Teknolojinin bireyleri güçlendirdiği ve haklarına saygı duyduğu, daha özgürce erişilebilir bir geleceğe inanıyoruz. Para için değil, daha güvenilir bir internet için.",
       heroButton: "Daha Fazla Bilgi",
-      heroGuideButton: "DET Rehberi",
       aboutTitle: "Hakkımızda",
       aboutText:
         "Xmer™ DET olarak, dijital özgürlüğü teşvik eden ve teknolojide etik standartları koruyan yenilikçi çözümler geliştirmeye kararlıyız. Hayalimiz ve amacımız birlikte kişisel verilerin sahiplerine ait olduğu yeni bir dünya kurmak.",
