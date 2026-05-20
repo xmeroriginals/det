@@ -327,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
       translations.tr[`p${project.id}D`] = project.desc_tr;
 
       projectsHTML += `
-            <div class="snap-center shrink-0 w-[80vw] sm:w-[400px] animate-on-scroll" data-project-index="${index}" style="transition-delay: ${
+            <div class="snap-center shrink-0 w-[80vw] sm:w-[400px]" data-project-index="${index}" style="transition-delay: ${
               index * 100
             }ms">
                 <div class="h-full bg-white dark:bg-gray-800/50 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group">

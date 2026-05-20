@@ -1,24 +1,15 @@
 [
   {
     "id": 1,
-    "image": "https://xmeroriginals.com/resources/projects-thumbs/TinDay-Thumb.png",
-    "title_en": "TinDay | Social Platform",
-    "desc_en": "Match with people born on the same day. Chat, celebrate, connect, call, or talk without creating an account.",
-    "title_tr": "TinDay | Sosyal Platform",
-    "desc_tr": "Aynı gün doğan kişilerle eşleşin. Hesap oluşturmadan sohbet edin, kutlayın, bağlantı kurun, arayın veya konuşun.",
-    "link": "https://tinday.xmeroriginals.com"
+    "image": "https://xmeroriginals.com/resources/projects-thumbs/Melech-Thumb.png",
+    "title_en": "Melech | Music Player",
+    "desc_en": "Are you ready to use our unique and feature-rich music player without creating an account?",
+    "title_tr": "Melech | Müzik Çalar",
+    "desc_tr": "Hesap oluşturmadan benzersiz ve özelliklerle dolu müzik çalarımızı kullanmaya hazır mısınız?",
+    "link": "https://melech.xmeroriginals.com"
   },
   {
     "id": 2,
-    "image": "https://xmeroriginals.com/resources/projects-thumbs/Lunetune-Thumb.png",
-    "title_en": "Lunetune | Music Player",
-    "desc_en": "Are you ready to use our unique and feature-rich music player without creating an account?",
-    "title_tr": "Lunetune | Müzik Çalar",
-    "desc_tr": "Hesap oluşturmadan benzersiz ve özelliklerle dolu müzik çalarımızı kullanmaya hazır mısınız?",
-    "link": "https://lunetune.xmeroriginals.com"
-  },
-  {
-    "id": 3,
     "image": "https://xmeroriginals.com/resources/projects-thumbs/EasyLock-Thumb.png",
     "title_en": "EasyLock | Program",
     "desc_en": "The quickest way to instantly encrypt and secure your important files before uploading them to a cloud service. Right-click, set a password, and encrypt.",
@@ -27,7 +18,7 @@
     "link": "https://easylock.xmeroriginals.com/"
   },
   {
-    "id": 4,
+    "id": 3,
     "image": "https://xmeroriginals.com/resources/projects-thumbs/SharePeer-Thumb.png",
     "title_en": "SharePeer | Web Program",
     "desc_en": "Send all your files, regardless of importance/triviality or size/smallness, to the target user quickly and securely via P2P technology, without an intermediary server, at no cost.",
